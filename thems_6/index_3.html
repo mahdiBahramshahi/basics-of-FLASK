@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>loops in template</title>
+    </head>
+    <body>
+        <h1 style="color: brown;"><center> loops in template </center></h1>
+        
+        <center style="color: blue"> {{students}} </center>
+        <br><br>
+        <ul>
+        {% for student in students %}
+            <center><li style="color: blue;">{{student}}</li></center>
+        {% endfor %}
+        </ul>
+        <h2 style="color: brown;"><center> numbers </center></h2>
+        <ul>
+        {% for num in numbers %}
+            {% if num % 2 == 0 %}
+                <center><li style="color: blue;">{{num}}</li></center>
+            {% endif %}
+        {% endfor %}
+
+        </ul>
+        <img src="image.png" alt="picture">
+    </body>
+</html>
+
+
